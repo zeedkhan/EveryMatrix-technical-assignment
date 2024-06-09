@@ -138,11 +138,6 @@ const ChatContent = () => {
 
     }, []);
 
-    useEffect(() => {
-        if (!currentChat || !roomContext) {
-            setActiveUsers([]);
-        }
-    }, [activeUsers])
 
     return (
         <div className="flex-1 border-l flex">

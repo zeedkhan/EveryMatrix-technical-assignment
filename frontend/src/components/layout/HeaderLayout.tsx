@@ -21,14 +21,16 @@ const HeaderLayout = () => {
                 <div className="w-full max-w-7xl mx-auto px-4">
                     <div className="flex justify-between h-14 items-center">
 
-                        {auth ? (
+                        <div className="flex space-x-2 items-center justify-between">
+                            {auth && (
+                                <NavLink to={"/"} className="flex items-center px-4">
+                                    <MountainIcon className="h-6 w-6" />
+                                    <span className="sr-only">Home Page</span>
+                                </NavLink>
+                            )}
                             <RoomsMobileNav />
-                        ) : (
-                            <NavLink to={"/"} className="flex items-center">
-                                <MountainIcon className="h-6 w-6" />
-                                <span className="sr-only">Home Page</span>
-                            </NavLink>
-                        )}
+
+                        </div>
 
 
 
