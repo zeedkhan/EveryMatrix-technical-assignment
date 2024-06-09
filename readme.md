@@ -12,7 +12,7 @@ Database: Postgresql
 # Installation
 
 ```bash
-git clone
+git clone https://github.com/zeedkhan/EveryMatrix-technical-assignment.git
 ```
 
 # Add environment
